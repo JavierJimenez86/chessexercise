@@ -4,7 +4,7 @@ Chess Exercise
 
 # Description
 
-A python program consisting in give all the potential chess board positions of a a given piece(rook, bishop, knight and queen) could advance to, with one move, from the given position, with the assumption there are no other pieces on the chess board.
+A python program consisting in give all the potential chess board positions of a given piece (rook, bishop, knight and queen) could advance to, with one move, from the given position, with the assumption there are no other pieces on the chess board.
 
 # Getting Started
 
@@ -12,9 +12,10 @@ The project consists of one simple file named chessgame.py. which received two p
 
   - piece: This is the argument for the chess piece name: Ex: rook, bishop, knight or queen.
   - position: This is the notation for a position in the chess board: Ex: E4, D6, etc.
-  - help: Show a help message 
+ 
+In addition, the parameter **help** to receiv will show a help message 
   
-The output will be all the possibles moves given the piece and its position
+The output will be all the possible moves given the piece and its position
 
 # Prerequisites
 
@@ -26,7 +27,7 @@ In this section are presented four test cases, one for each chess piece that is 
 
 **1. Rook**
 
-Rook moves horizontally and vertically. If the parametters passed are:  “rook E6”
+Rook moves horizontally and vertically. If the parameters passed are:  “rook E6”
 The output would be: A6, B6, C6, D6, F6, G6, H6, E1, E2, E3, E4, E5, E7, E8
 
 Test:
@@ -43,7 +44,7 @@ Test:
    
 **2. Bishop**
 
-Bishop moves diagonally. If the parametters passed are:  “bishop E6”
+Bishop moves diagonally. If the parameters passed are:  “bishop E6”
 The output would be: D5, C4, B3, A2, F7, G8, D7, C8, F5, G4, H3
 
 Test:
@@ -60,7 +61,7 @@ Test:
    
 **3. Queen**
 
-Queen moves horizontally, vertically and diagonally. If the parametters passed are:  “queen E6”
+Queen moves horizontally, vertically and diagonally. If the parameters passed are:  “queen E6”
 The output would be: A6, B6, C6, D6, F6, G6, H6, E1, E2, E3, E4, E5, E7, E8, D5, C4, B3, A2, F7, G8, D7, C8, F5, g4, H3
 
   Test:
@@ -77,7 +78,7 @@ The output would be: A6, B6, C6, D6, F6, G6, H6, E1, E2, E3, E4, E5, E7, E8, D5,
    
 **4. Knight**
 
-Knight moves in a L way, that means two position in the row direction and the other in the column direction and viceversa, two in the column direction and the other in the row direction. If the parametters passed are:  “knight E6”
+Knight moves in an L way, that means two positions in the row direction and the other in the column direction and vice versa, two in the column direction and the other in the row direction. If the parametters passed are:  “knight E6”
 The output would be: C7, G7, D8, F8, G5, C5, F4, D4
 
   Test:
