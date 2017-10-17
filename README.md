@@ -1,51 +1,98 @@
-#ChessExercise
+# Title
 
-Project Title
+Chess Exercise
 
-A python program consisting in give all the potential chess board positions of a a given piece(rook, bishop, jnight and queen) could advance to, with one move, from the given position, with the assumption there are no other pieces on the chess board.
+# Description
 
-Getting Started
+A python program consisting in give all the potential chess board positions of a a given piece(rook, bishop, knight and queen) could advance to, with one move, from the given position, with the assumption there are no other pieces on the chess board.
 
-The project consists of one simple file named chessgame.py. which received two parameters: a predetermined chess piece (rook, bishop knight or queen, bishop) and the current position, and will return possible movements of this piece in the chessboard.
+# Getting Started
 
+The project consists of one simple file named chessgame.py. which received two parameters: 
 
+  - piece: This is the argument for the chess piece name: Ex: rook, bishop, knight or queen.
+  - position: This is the notation for a position in the chess board: Ex: E4, D6, etc.
+  - help: Show a help message 
+  
+The output will be all the possibles moves given the piece and its position
 
-Prerequisites
+# Prerequisites
 
 This project was developed with Python 2.7.9 in Windows
 
-Give examples
-Installing
+# Examples
 
-A step by step series of examples that tell you have to get a development env running
+In this section are presented four test cases, one for each chess piece that is included in our implementation:
 
-Say what the step will be
+1. Rook
 
-Give the example
-And repeat
+Rook moves horizontally and vertically. If the parametters passed are:  “rook E6”
+The output would be: A6, B6, C6, D6, F6, G6, H6, E1, E2, E3, E4, E5, E7, E8
 
-until finished
-End with an example of getting some data out of the system or using it for a little demo
+  Test:
 
-Running the tests
+  - Input
 
-Explain how to run the automated tests for this system
+   > chessgame.py -piece rook -position E6
 
-Break down into end to end tests
+  - Output: 
 
-Explain what these tests test and why
+   > moves for the rook in the position E6 :
 
-Give an example
-And coding style tests
+   > ['a6', 'b6', 'c6', 'd6', 'f6', 'g6', 'h6', 'e1', 'e2', 'e3', 'e4', 'e5', 'e7', 'e8']
+   
+   2. Bishop
 
-Explain what these tests test and why
+Bishop moves diagonally. If the parametters passed are:  “bishop E6”
+The output would be: D5, C4, B3, A2, F7, G8, D7, C8, F5, G4, H3
 
-Give an example
-Deployment
+  Test:
 
-Add additional notes about how to deploy this on a live system
+  - Input
+
+   > chessgame.py -piece bishop -position E6
+
+  - Output: 
+
+   > moves for the bishop in the position e6 :
+
+   > ['d5', 'c4', 'b3', 'a2', 'f7', 'g8', 'd7', 'c8', 'f5', 'g4', 'h3']
+   
+   3. Queen
+
+Queen moves horizontally, vertically and diagonally. If the parametters passed are:  “queen E6”
+The output would be: A6, B6, C6, D6, F6, G6, H6, E1, E2, E3, E4, E5, E7, E8, D5, C4, B3, A2, F7, G8, D7, C8, F5, g4, H3
+
+  Test:
+
+  - Input
+
+   > chessgame.py -piece queen -position E6
+
+  - Output: 
+
+   > moves for the queen in the position e6 :
+
+   > ['a6', 'b6', 'c6', 'd6', 'f6', 'g6', 'h6', 'e1', 'e2', 'e3', 'e4', 'e5', 'e7', 'e8', 'd5', 'c4', 'b3', 'a2', 'f7', 'g8', 'd7', 'c8', 'f5', 'g4', 'h3']
+   
+   4. Knight
+
+Knight moves in a L way, that means two position in the row direction and the other in the column direction and viceversa, two in the column direction and the other in the row direction. If the parametters passed are:  “knight E6”
+The output would be: C7, G7, D8, F8, G5, C5, F4, D4
+
+  Test:
+
+  - Input
+
+   > chessgame.py -piece queen -position E6
+
+  - Output: 
+
+   > moves for the knight in the position e6 :
+
+   > ['c7', 'g7', 'd8', 'f8', 'g5', 'c5', 'f4', 'd4']
 
 
-Authors
+# Authors
 
 Javier Jiménez - javierjaleman1986@gmail.com
