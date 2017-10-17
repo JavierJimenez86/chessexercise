@@ -24,12 +24,12 @@ This project was developed with Python 2.7.9 in Windows
 
 In this section are presented four test cases, one for each chess piece that is included in our implementation:
 
-1. Rook
+**1. Rook**
 
 Rook moves horizontally and vertically. If the parametters passed are:  “rook E6”
 The output would be: A6, B6, C6, D6, F6, G6, H6, E1, E2, E3, E4, E5, E7, E8
 
-  Test:
+Test:
 
   - Input
 
@@ -41,12 +41,12 @@ The output would be: A6, B6, C6, D6, F6, G6, H6, E1, E2, E3, E4, E5, E7, E8
 
    > ['a6', 'b6', 'c6', 'd6', 'f6', 'g6', 'h6', 'e1', 'e2', 'e3', 'e4', 'e5', 'e7', 'e8']
    
-   2. Bishop
+**2. Bishop**
 
 Bishop moves diagonally. If the parametters passed are:  “bishop E6”
 The output would be: D5, C4, B3, A2, F7, G8, D7, C8, F5, G4, H3
 
-  Test:
+Test:
 
   - Input
 
@@ -58,7 +58,7 @@ The output would be: D5, C4, B3, A2, F7, G8, D7, C8, F5, G4, H3
 
    > ['d5', 'c4', 'b3', 'a2', 'f7', 'g8', 'd7', 'c8', 'f5', 'g4', 'h3']
    
-   3. Queen
+**3. Queen**
 
 Queen moves horizontally, vertically and diagonally. If the parametters passed are:  “queen E6”
 The output would be: A6, B6, C6, D6, F6, G6, H6, E1, E2, E3, E4, E5, E7, E8, D5, C4, B3, A2, F7, G8, D7, C8, F5, g4, H3
@@ -75,7 +75,7 @@ The output would be: A6, B6, C6, D6, F6, G6, H6, E1, E2, E3, E4, E5, E7, E8, D5,
 
    > ['a6', 'b6', 'c6', 'd6', 'f6', 'g6', 'h6', 'e1', 'e2', 'e3', 'e4', 'e5', 'e7', 'e8', 'd5', 'c4', 'b3', 'a2', 'f7', 'g8', 'd7', 'c8', 'f5', 'g4', 'h3']
    
-   4. Knight
+**4. Knight**
 
 Knight moves in a L way, that means two position in the row direction and the other in the column direction and viceversa, two in the column direction and the other in the row direction. If the parametters passed are:  “knight E6”
 The output would be: C7, G7, D8, F8, G5, C5, F4, D4
