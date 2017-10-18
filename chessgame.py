@@ -220,7 +220,7 @@ def getKnightMoves(pos, chessBoard):
     solutionMovesKnight.append([i - 2, j - 1])
 
     # Filtering all negative values
-    solutionMovesKnightFinal = [i for i in solutionMovesKnight if i[0] >= 0 and i[1] >= 0]
+    solutionMovesKnightFinal = [i for i in solutionMovesKnight if i[0] >= 0 and i[1] >= 0 and i[0] < 8 and i[1] < 8]
     allPossibleMoves = ["".join([chess_map_from_index_to_letter[i[1]], str(i[0] + 1)]) for i in solutionMovesKnightFinal]
     return allPossibleMoves
 
